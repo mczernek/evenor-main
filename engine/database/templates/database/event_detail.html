@@ -1,0 +1,10 @@
+<h1>{{ event.event_name }}</h1>
+
+<p>
+    {{ event.event_description }}
+</p>
+<ul>
+    {% for comment in comment_list %}
+    <li>{{ comment.text }}, says {{ comment.user }}</li>
+    {% endfor %}
+</ul>
